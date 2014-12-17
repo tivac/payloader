@@ -1,0 +1,28 @@
+{
+  "name": "payloader",
+  "version": "0.0.1",
+  "description": "Load your JS & CSS in a sane, performant way.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tivac/payloader.git"
+  },
+  "keywords": [
+    "loader",
+    "modules",
+    "javascript",
+    "css",
+    "cmd",
+    "chainable",
+    "loading"
+  ],
+  "author": "Patrick Cavit <pcavit@gmail.com> (http://patcavit.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tivac/payloader/issues"
+  },
+  "homepage": "https://github.com/tivac/payloader"
+}
