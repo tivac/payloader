@@ -1,5 +1,7 @@
-Payloader
+Payloader - WIP DO NOT USE
 =========
+
+:warning: :red_circle: :large_blue_circle: **This is massively WIP, do not use it for anything except a good laugh!** :large_blue_circle: :red_circle: :warning:
 
 Load your JS & CSS in a sane, performant way.
 
@@ -138,5 +140,15 @@ payloader.config({
         url : "/test-alias.js",
         requires : [ "fooga", "booga" ]
     }
+});
+```
+
+### `payloader.load(<module>, ..., <module-n>, <function>)`
+
+Load a module (or several). Payloader will resolve module dependencies and optionally attempt to make as few requests as possible. The last parameter may optionally be a function that will be invoked once all the requested modules are loaded.
+
+```js
+payloader.load("fooga", "wooga", "booga", function() {
+    ...
 });
 ```
