@@ -125,7 +125,8 @@
             return false;
         }
 
-        var modules = Array.prototype.slice.apply(arguments);
+        var modules = Array.prototype.slice.apply(arguments),
+            done    = typeof modules[modules.length - 1] === "function" ? modules.pop() : null;
 
         modules = _resolve(modules);
 
@@ -142,8 +143,6 @@
                 console.log(data); //TODO: REMOVE DEBUGGING
             });
         });
-
-        return modules;
     };
     
     if(typeof module !== "undefined" && module.exports) {
