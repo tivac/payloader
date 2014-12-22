@@ -1,5 +1,5 @@
 /*jshint browser:true */
-(function() {
+(function(global) {
     "use strict";
 
     var _config = {};
@@ -43,7 +43,9 @@
         });
     };
 
-    if(module && module.exports) {
-        module.exports = payloader;
-    }
-}());
+if(typeof module !== "undefined" && module.exports) {
+    module.exports = payloader;
+} else {
+    global.payloader = payloader;
+}
+}((function() { return this; }())));
