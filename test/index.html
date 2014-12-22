@@ -2,13 +2,34 @@
 <html>
 <head>
     <title>Payloader</title>
+    <meta charset="utf-8">
 </head>
 <body>
 
 <script src="../src/payloader.js"></script>
 <script>
 payloader.config({
-    fooga : "/test/js/fooga.js"
+    fooga : "/test/js/fooga.js",
+    wooga : {
+        url : "/test/js/wooga.js",
+        requires : [ "fooga" ]
+    },
+    booga : {
+        url : "/test/js/booga.js",
+        requires : [ "fooga" ]
+    },
+    looga : {
+        url : "/test/js/looga.js",
+        requires : [ "fooga", "booga" ]
+    },
+    tooga : {
+        url : "/test/js/tooga.js",
+        requires : [ "looga" ]
+    },
+    googa : {
+        url : "/test/js/googa.js",
+        requires : [ "wooga", "tooga" ]
+    }
 });
 </script>
 </body>
