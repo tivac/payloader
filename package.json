@@ -4,7 +4,7 @@
   "description": "Load your JS & CSS in a sane, performant way.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "start": "static"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/tivac/payloader/issues"
   },
-  "homepage": "https://github.com/tivac/payloader"
+  "homepage": "https://github.com/tivac/payloader",
+  "devDependencies": {
+    "node-static": "^0.7.6"
+  }
 }
