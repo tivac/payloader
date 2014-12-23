@@ -1,6 +1,6 @@
 {
   "name": "payloader",
-  "version": "0.0.1",
+  "version": "0.0.2-0",
   "description": "Load your JS & CSS in a sane, performant way.",
   "main": "index.js",
   "scripts": {
